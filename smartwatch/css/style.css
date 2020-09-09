@@ -1,0 +1,696 @@
+@font-face {
+	font-family: 'Sofia';
+	src: url(../vendor/fonts/sofia-pro-light-maisfontes/sofia-pro-light.otf);
+}
+
+@font-face {
+	font-family: 'Sofia-Bold';
+	src: url(../vendor/fonts/sofia-pro-light-maisfontes/SofiaPro-Bold.ttf);
+}
+
+@font-face {
+	font-family: 'Sofia-Regular';
+	src: url(../vendor/fonts/sofia-pro-light-maisfontes/Sofia\ Pro\ Regular.ttf);
+}
+
+* {
+	margin: 0;
+	-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+}
+
+body, html {
+	width: 100%;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	font-family: 'Sofia', sans-serif;
+	background: #f0eeee;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+/* ######################################################
+###################### TYPOGRAPHY #######################
+######################################################### */
+
+h1.main-heading {
+	color: #000;
+	font-weight: 900;
+	font-size: 25px;
+	letter-spacing: .3px;
+	margin-top: 180px;
+	margin-bottom: 25px;
+	font-family: 'Sofia-Bold', sans-serif;
+}
+
+h3.subtitle {
+	color: #000;
+	font-weight: 300;
+	font-size: 15px;
+	letter-spacing: .3px;
+	margin-bottom: 140px;
+}
+
+/* ######################################################
+######################## HEADER #########################
+######################################################### */
+
+header .container {
+	padding: 0;
+	border-bottom: .8px solid #c8c8c8;
+}
+
+header .nav-item {
+	padding: 0 30px;
+}
+
+header .nav-item.active .nav-link {
+	color: #202020;
+}
+
+header .nav-item .nav-link {
+	color: #7a7a7a;
+	font-size: 14px;
+}
+
+header i {
+	color: #121212;
+	cursor: pointer;
+}
+
+header .navbar-toggler {
+	border-color: transparent !important;
+}
+
+/* ######################################################
+#################### HERO SECTION #######################
+######################################################### */
+
+.hero-section img {
+	width: 80%;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.hero-section .item {
+	position: relative;
+	height: 780px;
+	text-align: center;
+}
+
+.hero-section .item h1 {
+	position: relative;
+	margin-top: 96px;
+	margin-bottom: 30px;
+}
+
+.hero-section .btn {
+	margin-top: 30px;
+	border: .7px solid #3589d0;
+	border-radius: 0px;
+	padding: 5px 25px;
+	color: #3589d0;
+	font-size: 12px;
+	letter-spacing: 1px;
+	transition: all .4s ease-in-out;
+}
+
+.hero-section .btn:hover {
+	background: #3589d0;
+	color: #fff;
+}
+
+.hero-section .left-arrow,
+.hero-section .right-arrow {
+	width: 15px;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 100;
+}
+
+.hero-section .left-arrow {
+	left: 110px;
+}
+
+.hero-section .right-arrow {
+	right: 110px;
+}
+
+.hero-section .left-arrow img,
+.hero-section .right-arrow img {
+	width: 15px;
+	cursor: pointer;
+	transition: all .4s ease;
+}
+
+.hero-section .left-arrow img:hover,
+.hero-section .right-arrow img:hover {
+	filter: invert(50%) sepia(1%) saturate(0%) hue-rotate(144deg) brightness(94%) contrast(86%);
+}
+
+
+/* ######################################################
+#################### DARK SECTION #######################
+######################################################### */
+
+.dark .container-fluid {
+	background: #000;
+	padding: 0;
+	margin: 0;
+}
+
+.dark .row {
+	margin: 0;
+}
+
+.dark .container-fluid .col-md-3 {
+	padding: 0;
+	height: 800px;
+}
+
+.dark .container-fluid .col-md-9 {
+	padding: 0;
+	height: 800px;
+}
+
+.dark .container-fluid .center {
+	width: 250px;
+	position: absolute;
+	transform: translateY(-50%);
+	top: 50%;
+	right: -125px;
+}
+
+.dark .inner-text {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+	width: 585px;
+}
+
+.dark .inner-text h1 {
+	letter-spacing: 2px;
+	color: #fff;
+	font-size: 50px;
+	font-weight: 600;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.dark .inner-text .first {
+	color: #fff;
+	font-size: 16px;
+	margin-bottom: 70px;
+}
+
+.dark .inner-text .buttons {
+	width: 100%;
+	margin-bottom: 75px;
+}
+
+.dark .inner-text .buttons .btn {
+	padding: 7px 18px;
+	border: .7px solid #fff;
+	display: inline-block;
+	color: #fff;
+	border-radius: 0px;
+}
+
+.dark .inner-text .buttons .btn:hover {
+	color: #434343;
+}
+
+.dark .inner-text .buttons .btn:first-child {
+	margin-right: 34px;
+}
+
+.dark .inner-text .muted {
+	color: #434343;
+	font-size: 13px;
+}
+
+/* ######################################################
+################# DESCRIPTION SECTION ###################
+######################################################### */
+
+.description .text {
+	min-height: 100%;
+    max-width: 900px;
+	margin: 0 auto;
+}
+
+.description .text h1:nth-child(1) {
+	color: #000;
+	font-weight: 900;
+	font-size: 40px;
+	letter-spacing: 1.3px;
+	margin-bottom: 50px;
+	font-family: 'Sofia-Bold', sans-serif;
+}
+
+.description .text h3:nth-child(2) {
+	color: #000;
+	font-weight: 300;
+	font-size: 18px;
+	letter-spacing: .2px;
+	margin-bottom: 50px;
+	font-family: 'Sofia-Regular', sans-serif;
+}
+
+.description .buttons {
+	margin-bottom: 200px;
+}
+
+.description .buttons .btn {
+	font-family: 'Sofia-Regular', sans-serif;
+	font-size: 16px;
+	color: #3589d0;
+	width: 170px;
+}
+
+.description .buttons .btn i {
+	margin-left: 5px;
+	transition: all .4s ease;
+}
+
+.description .buttons .btn:hover i {
+	padding-left: 15px;
+}
+
+.description .icon  {
+	margin-bottom: 30px;
+}
+
+.description .col-md-3 h1 {
+	font-size: 20px;
+	font-family: 'Sofia-Bold', sans-serif;
+	color: #000;
+	margin-bottom: 25px;
+}
+
+.description .col-md-3 p {
+	font-weight: 500;
+	line-height: 25px;
+	color: #000;
+	margin-bottom: 25px;
+}
+
+.description .col-md-3 a.btn {
+	font-weight: 600;
+	color: #3589d0;
+
+}
+
+.description .col-md-3 a.btn i {
+	font-size: 13px;
+	color: #3589d0;
+	transition: all .4s ease;	
+}
+
+.description .col-md-3 a.btn:hover i {
+	margin-left: 5px;
+}
+
+/* ######################################################
+###################### DESIGN SECTION ###################
+######################################################### */
+
+#design {
+	background: #000;
+	margin-top: 200px;
+}
+
+#design .col-md-6 {
+	height: 800px;
+	overflow: hidden;
+}
+
+#design .col-md-6 img{
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+	height: 100%;
+} 
+
+#design .col-md-6 .inner-text {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+	min-width: 100%;
+	max-width: 490px;
+	padding: 30px;
+}
+
+#design .col-md-6 .inner-text h1 {
+	letter-spacing: 2px;
+	color: #fff;
+	font-size: 50px;
+	font-weight: 600;
+	margin-bottom: 40px;
+	font-family: 'Sofia-Bold', sans-serif;
+}
+
+#design .col-md-6 .inner-text p {
+	color: #fff;
+	font-size: 16px;
+	margin-bottom: 50px;
+}
+
+#design .col-md-6 .inner-text .btn {
+	padding: 5px 22px;
+	border: 1px solid #fff;
+	display: inline-block;
+	color: #fff;
+	border-radius: 0px;
+}
+
+#design .col-md-6 .inner-text .btn:hover {
+	color: #a3a3a3;
+	border: 1px solid #a3a3a3;
+}
+
+#design .col-md-6 .inner-text p.muted {
+	margin-top: 70px;
+	color: #434343;
+	font-size: 13px;
+}
+
+/* ######################################################
+###################### MODELS SECTION ###################
+######################################################### */
+
+#models .text {
+	min-height: 100%;
+    max-width: 700px;
+	margin: 0 auto;
+}
+
+#models h1.main-heading {
+	margin-top: 80px;
+}
+
+#models h3.subtitle {
+	margin-bottom: 90px;
+}
+
+#models .text h3 {
+	color: #000;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 25px;
+	letter-spacing: .3px;
+	margin-bottom: 50px;
+}
+
+#models .buttons {
+	margin-bottom: 120px;
+}
+
+#models .buttons .btn {
+	font-family: 'Sofia-Regular', sans-serif;
+	font-size: 16px;
+	color: #3589d0;
+	width: 170px;
+}
+
+#models .buttons .btn i {
+	margin-left: 5px;
+	transition: all .4s ease;
+}
+
+#models .buttons .btn:hover i {
+	padding-left: 15px;
+}
+
+#models .icon  {
+	margin-bottom: 30px;
+}
+
+
+#models .container-fluid {
+	padding-bottom: 110px;
+}
+
+#models .container-fluid img {
+	position: relative;
+	width: 50%;
+}
+
+#models .container-fluid .d-flex {
+	justify-content: center;
+}
+
+#models .container-fluid .d-flex h1 {
+	display: inline-block;
+	font-size: 19px;
+	font-family: 'Sofia-Bold', sans-serif;
+	color: #000;
+	letter-spacing: .5px;
+}
+
+#models .container-fluid .d-flex .divider {
+	width: 1px;
+	height: 25px;
+	background: #000;
+	margin: 0 15px;
+}
+
+#models .container-fluid .d-flex p {
+	font-size: 16px;
+	font-family: 'Sofia-Regular', sans-serif;
+	color: #000;
+	text-transform: capitalize;
+}
+
+#models .bottom-shadow {
+	position: relative;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+#models .container-fluid a.btn {
+	color: #3589d0;
+}
+
+#models .container-fluid a.btn:hover {
+	color: #434343;
+}
+
+/* ######################################################
+###################### QUOTE SECTION ####################
+######################################################### */
+
+#quote {
+	position: relative;
+}
+
+#quote img {
+	width: 100%;
+}
+
+#quote .text {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+	text-align: center;
+}
+
+#quote .text h1 {
+	color: #fff;
+	font-family: 'Sofia-Regular', sans-serif;
+	margin-bottom: 40px;
+}
+
+#quote .text p {
+	color: #c8c8c8;
+	font-weight: 300;
+	font-size: 16px;
+}
+
+/* ######################################################
+####################### LAST SECTION ####################
+######################################################### */
+
+#last {
+	position: relative;
+	text-align: center;
+}
+
+#last img {
+	position: relative;
+	width: 100%;
+	margin-top: 240px;
+	margin-bottom: 205px;
+}
+
+#last .text {
+	max-width: 670px;
+	min-height: 100%;
+	margin: 0 auto;
+}
+
+#last .text h1 {
+	color: #000;
+	font-family: 'Sofia-Bold', sans-serif;
+	font-size: 23px;
+	margin-bottom: 50px;
+}
+
+#last .text p {
+	color: #000;
+	font-size: 16px;
+	font-family: 'Sofia-Regular', sans-serif;
+	margin-bottom: 40px;
+}
+
+#last .text .buttons {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 40px;
+}
+
+#last .text .buttons .btn {
+	color: #3589d0;
+	font-size: 12px;
+	letter-spacing: 1px;
+	font-family: 'Sofia-Regular', sans-serif;
+	transition: all .4s ease-in-out;
+}
+
+#last .text .buttons .btn:hover {
+	color: #434343;
+}
+
+#last .text .d-flex {
+	width: 70%;
+	margin: 0 auto;
+	margin-bottom: 256px;
+}
+
+#last .text input[type='email'] {
+	width: 75%;
+	height: 40px;
+	display: inline-block;
+	background: #f0eeee;
+	border-radius: 0;
+	margin: 0;
+	padding: 5px;
+	color: #7a7a7a;
+	border: .5px solid #000;
+	padding-left: 15px;
+	font-size: 14px;
+	border-right-color: transparent;
+}
+
+#last .text input[type='email']:focus {
+	outline: none;
+}
+
+#last .text input[type='submit'] {
+	width: 25%;
+	height: 40px;
+	display: inline-block;
+	border-radius: 0;
+	margin: 0;
+	color: #fff;
+	border: .5px solid #000;
+	background: #000;
+	font-size: 14px;
+	transition: all .4s ease;
+}
+
+#last .text input[type='submit']:hover {
+	background: rgb(36, 36, 36);
+	border: .5px solid rgb(36, 36, 36);
+}
+
+/* ######################################################
+######################### FOOTER ########################
+######################################################### */
+
+footer {
+	position: relative;
+	background: #282828;
+	padding: 20px 0px;
+}
+
+footer  p,
+footer a {
+	color: #c0c0c0;
+	font-size: 13px;
+}
+
+footer p,
+footer a {
+	margin: 20px 0px;
+}
+
+footer a {
+	text-decoration: none !important;
+	transition: all .4s ease;
+}
+
+footer a:hover {
+	color: #fff;
+}
+
+footer .col-md-2 a {
+	display: block;
+}
+
+footer .col-md-2 a:hover {
+	padding-left: 15px;
+}
+
+footer hr {
+	width: 100%;
+	height: .7px;
+	border: none;
+	background: #c0c0c0;
+	margin: 20px 0px;
+}
+
+footer h1 {
+	font-family: 'Sofia-Bold', sans-serif;
+	font-size: 19px;
+	color: #fff;
+}
+
+footer .breadcrumb {
+	padding: 0;
+	margin: 0;
+	background-color: transparent;
+	border-radius: 0px;
+	margin-bottom: 20px;
+}
+
+footer .breadcrumb-item.active {
+	color: #fff;
+}
+
+footer .breadcrumb-item+.breadcrumb-item::before {
+    padding: 0;
+    color: transparent;
+    content: '';
+}
+
+footer i {
+	color: #c0c0c0;
+	font-size: 10px;
+	margin-left: 15px;
+}

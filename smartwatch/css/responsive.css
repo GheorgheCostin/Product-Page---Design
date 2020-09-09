@@ -1,0 +1,72 @@
+@media only screen and (max-width: 990px) {
+
+    /* HEADER */
+    header .nav-item {
+        text-align: center;
+    }
+
+    header i.fa-search {
+        display: none;
+    }
+
+    /* DARK SECTION */
+    .dark .col-md-3 {
+        display: none;
+    }
+
+    .dark .col-md-9 {
+        max-width: 100% !important;
+        flex: 0 0 100%;
+    }
+
+    .dark .inner-text {
+        width: 100%;
+        padding: 50px;
+    }
+
+    .dark .inner-text .buttons {
+        text-align: center !important;
+    }
+
+    .dark .inner-text .buttons .btn:first-child {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    /* DESCRIPTION SECTION */
+    .description .col-sm-6 {
+        margin-bottom: 50px;
+    }
+
+    /* MODELS SECTION */
+    #models .col-md-6,
+    #models .col-12 {
+        margin-bottom: 100px !important;
+    }
+
+    /* QUOTE SECTION */
+    #quote img {
+        width: 900px !important;
+        overflow: hidden; 
+    }
+
+    #quote h1 {
+        font-size: 25px;
+    }
+
+    /* LAST SECTION */
+    #last .text {
+        padding: 30px;
+    }
+
+
+    /* FOOTER */
+    footer .row {
+        padding: 0px 30px;
+    }
+
+    footer .col-md-2 {
+        margin: 30px 0px;
+    }
+} 
+
